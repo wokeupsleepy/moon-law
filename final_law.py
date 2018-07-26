@@ -50,7 +50,8 @@ class FinalLaw:
             "Unique organization",
             "Engenders trust",
             "Harvested resources/precursor material can be pooled, so large projects can be completed more easily",
-            "Isk is pooled, so goods can be sold on the market via sell orders instead of fulfilling buy order; this increases overall isk intake"
+            "Isk is pooled, so goods can be sold on the market via sell orders instead of fulfilling buy order; this increases overall isk intake",
+            "Larger group isk pool"
         ]
         self.communist_detriments = [
             "Difficult to recruit new members since they might suspect a scam/ruse",
@@ -64,7 +65,8 @@ class FinalLaw:
             "Easier to manage"
         ]
         self.socialist_detriments = [
-            "Less top-down control"
+            "Less top-down control",
+            "Smaller group isk pool"
         ]
 
     def validate_law(self):
