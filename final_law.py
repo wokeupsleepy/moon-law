@@ -37,11 +37,15 @@ class FinalLaw:
 
         self.tax_rate = tax_rate
         self.encourage_outside_recruitment = encourage_outside_recruitment
-
         self.chosen_philosophy = chosen_philosophy
+
+        self.philosophy_description = []
         self.benefits = []
         self.detriments = []
 
+        self.communist_description = [
+            "This means that all/almost all resources and isk are shared and available for communal use."
+        ]
         self.communist_benefits = [
             "Unique organization",
             "Engenders trust",
@@ -56,6 +60,10 @@ class FinalLaw:
             "More work needed for deciding which group goals to pursue"
         ]
 
+        self.socialist_description = [
+            "This means that a pre-decided portion of resources and isk are shared and available for communal use.",
+            "This is closer to how most Eve corporations operate."
+        ]
         self.socialist_benefits = [
             "Closer to what Eve players expect, so recruit would be easier",
             "Easier to manage"
@@ -98,14 +106,17 @@ class FinalLaw:
             print("I want a " + self.chosen_philosophy + " corporation.")
 
             if self.chosen_philosophy == "communist":
-                print("This means that all/almost all resources and isk are shared and available for communal use.")
+                self.philosophy_description = self.communist_description
                 self.benefits = self.communist_benefits
                 self.detriments = self.communist_detriments
             elif self.chosen_philosophy == "socialist":
-                print("This means that a pre-decided portion of resources and isk are shared and available for communal use.")
-                print("This is closer to how most Eve corporations operate.")
+                self.philosophy_description = self.socialist_description
                 self.benefits = self.socialist_benefits
                 self.detriments = self.socialist_detriments
+
+            print(self.small_line_break)
+            for description in self.philosophy_description:
+                print(description)
 
             print(self.big_line_break)
             print("BENEFITS:")
