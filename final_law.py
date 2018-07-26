@@ -57,7 +57,8 @@ class FinalLaw:
             "Harvested resources/precursor material can be pooled, so large projects can be completed more easily",
             "Isk income is pooled, so goods can be sold on the market via sell orders instead of fulfilling buy order; this increases overall isk intake",
             "Larger group isk pool",
-            "Specialization is easier because you know that someone else can take care of it without any individual cost"
+            "Specialization is easier because you know that someone else can take care of it without any individual cost",
+            "Greater coordination for multi-step tasks such as industry, research, and trade"
         ]
         self.communist_detriments = [
             "Difficult to recruit new members since they might suspect a scam/ruse",
