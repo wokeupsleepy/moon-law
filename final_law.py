@@ -2,10 +2,6 @@
 
 The main thing we want to accomplish here is deciding on the best way to govern the corp for long-term stability.
 
-Currently, we are a communist corp.
-The tangible benefits of this is that we can share isk and put up almost all harvested resources in sell orders.
-This increases the amount of isk we can earn as a group above merely fulfilling existing buy orders.
-
 Main questions to answer/issues to address:
 How should we handle instances when someone wants to leave the corp?
 How should we handle instances when someone wants to join the corp?
