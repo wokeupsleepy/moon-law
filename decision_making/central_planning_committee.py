@@ -8,7 +8,7 @@ class CentralPlanningCommittee:
     def describe_committee(self):
         description = "The Central Planning Committee (hereafter abbreviated as CPC) is composed of the four founding members: " \
                       "Alex/Pompano, Tom/Tyler Mallory, Daniel/Eris Eto, and Pisspig/Lyle Dunham. " \
-                      "Each member of the CPC would be a managing director with specific oversight over 1 divisions. " \
+                      "Each member of the CPC would be a managing director with direct and specific oversight over 1 division. " \
                       "The CPC is responsible for making ultimate decisions that would affect the corporation as whole " \
                       "(Examples: Deciding on corp goals, joining an alliance, bluing/redding a player group, buying a player owned station). " \
                       "The CPC would make decisions using the following voting process:"
