@@ -1,3 +1,5 @@
+from decision_making.central_planning_committee import CentralPlanningCommittee
+
 """
 
 The main thing we want to accomplish here is deciding on the best way to govern the corp for long-term stability.
@@ -25,8 +27,12 @@ Promote corp longevity as an institution.
 
 
 class FinalLaw:
-    def __init__(self, chosen_philosophy="communist",
-                 tax_rate=100, encourage_outside_recruitment=False, personal_goals="", group_goals=""):
+    def __init__(self,
+                 chosen_philosophy="communist",
+                 tax_rate=100,
+                 encourage_outside_recruitment=False,
+                 personal_goals="",
+                 group_goals=""):
         self.small_line_break = "---------------------"
         self.big_line_break = "-=-=-=-=-=-=-=-=-=-=-"
         self.possible_philosophy_values = ["communist", "socialist"]
@@ -69,7 +75,7 @@ class FinalLaw:
         ]
 
         self.socialist_description = [
-            "This means that a pre-decided portion of resources and isk are shared and available for communal use.",
+            "This means that a predetermined portion of resources and isk are shared and available for communal use.",
             "This is closer to how most Eve corporations operate.",
             "Typically taxes are somewhat low (5-10%) and certain services such as 'Jita-hauling' and general protection are provided to members",
             "Outside of taxes and replenishing pre-determined communal resources, members are not necessarily encouraged or required to contribute.",
@@ -143,6 +149,13 @@ class FinalLaw:
 
             print(self.big_line_break)
 
+            # NOTE: Print out the component parts
+            central_planning_commitee = CentralPlanningCommittee(self.chosen_philosophy)
+            print(central_planning_commitee.describe_committee())
+
+
+# -----------------------
+# NOTE: Define what you want there. An example is listed below.
 
 # final = FinalLaw(chosen_philosophy="communist",
 #                  personal_goals="I want to do small gang PvP",
